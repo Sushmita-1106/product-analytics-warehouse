@@ -1,0 +1,9 @@
+venv/
+data/raw/*.csv
+data/marts/*.parquet
+warehouse.duckdb
+warehouse/dev.duckdb
+warehouse/target/
+warehouse/logs/
+*.pyc
+__pycache__/

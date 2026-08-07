@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: main
+    tables:
+      - name: raw_events
+        description: Raw GA4 event export, one week, loaded from BigQuery public dataset via web console.

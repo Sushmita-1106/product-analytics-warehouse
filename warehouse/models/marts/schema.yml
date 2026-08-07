@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: fct_sessions
+    columns:
+      - name: session_id
+        tests: [unique, not_null]
+      - name: user_pseudo_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_users')
+              field: user_pseudo_id
+
+  - name: dim_users
+    columns:
+      - name: user_pseudo_id
+        tests: [unique, not_null]
